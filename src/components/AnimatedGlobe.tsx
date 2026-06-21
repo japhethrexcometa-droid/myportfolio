@@ -19,7 +19,7 @@ const languageLogos = [
   { src: "/assets/languages/C++_Logo.svg.png", alt: "C++ logo", name: "C++" },
   { src: "/assets/languages/Csharp.png", alt: "C# logo", name: "C#" },
   { src: "/assets/languages/docker.png", alt: "Docker logo", name: "Docker" },
-  { src: "/assets/languages/mysql.png", alt: "MySQL logo", name: "MySQL", className: "bg-white rounded-full p-2" },
+  { src: "/assets/languages/mysql.png", alt: "MySQL logo", name: "MySQL" },
   { src: "/assets/languages/php.png", alt: "PHP logo", name: "PHP" },
   { src: "/assets/languages/postgresql.png", alt: "PostgreSQL logo", name: "PostgreSQL" },
   { src: "/assets/languages/react js.png", alt: "React logo", name: "React" },

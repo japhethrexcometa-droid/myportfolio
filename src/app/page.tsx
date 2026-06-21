@@ -45,7 +45,7 @@ const skills = [
   { name: "C++", logo: "/assets/languages/C++_Logo.svg.png" },
   { name: "C#", logo: "/assets/languages/Csharp.png" },
   { name: "Docker", logo: "/assets/languages/docker.png" },
-  { name: "MySQL", logo: "/assets/languages/mysql.png", className: "bg-white rounded-full p-1" },
+  { name: "MySQL", logo: "/assets/languages/mysql.png" },
   { name: "PHP", logo: "/assets/languages/php.png" },
   { name: "PostgreSQL", logo: "/assets/languages/postgresql.png" },
   { name: "Supabase", logo: "/assets/languages/supabase.jpg", className: "rounded-lg overflow-hidden" },
