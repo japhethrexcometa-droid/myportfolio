@@ -46,14 +46,14 @@ const skills = [
 
 const projects = [
   {
-    title: "MSU-ZS ROTC Unit System",
+    title: "MSU-ZS ROTC Unit System (In Progress)",
     description: "Architected a robust Progressive Web App (PWA) management system engineered to streamline ROTC attendance, enrollment, and record-keeping via secure, real-time dynamic QR code scanning and role-based access control.",
     technologies: ["React", "TypeScript", "Supabase", "Tailwind CSS"],
     icon: ShieldCheck,
     demoUrl: "https://msu-zs-rotc-unit.vercel.app",
   },
   {
-    title: "EcoDry System - IoT Monitoring",
+    title: "EcoDry System - IoT Monitoring (In Progress)",
     description: "Engineered an advanced web-based IoT monitoring platform integrating ESP32 hardware for real-time environmental data processing, automated shield control mechanisms, and scalable RBAC authentication.",
     technologies: ["Node.js", "Express", "SQLite3", "IoT"],
     icon: Activity,
