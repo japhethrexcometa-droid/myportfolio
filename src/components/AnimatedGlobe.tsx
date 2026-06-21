@@ -7,7 +7,7 @@ import Image from "next/image";
 const languageLogos = [
   { src: "/assets/languages/javascript.png", alt: "JavaScript logo", name: "JavaScript" },
   { src: "/assets/languages/Typescript.png", alt: "TypeScript logo", name: "TypeScript" },
-  { src: "/assets/languages/react.png", alt: "React logo", name: "React" },
+  { src: "/assets/languages/github.png", alt: "Github logo", name: "GitHub" },
   { src: "/assets/languages/next js.png", alt: "Next.js logo", name: "Next.js" },
   { src: "/assets/languages/node js.png", alt: "Node.js logo", name: "Node.js" },
   { src: "/assets/languages/python.png", alt: "Python logo", name: "Python" },
@@ -16,6 +16,15 @@ const languageLogos = [
   { src: "/assets/languages/git.png", alt: "Git logo", name: "Git" },
   { src: "/assets/languages/tailwind.jpg", alt: "Tailwind CSS logo", name: "Tailwind CSS" },
   { src: "/assets/languages/aws.webp", alt: "AWS logo", name: "AWS" },
+  { src: "/assets/languages/C++_Logo.svg.png", alt: "C++ logo", name: "C++" },
+  { src: "/assets/languages/Csharp.png", alt: "C# logo", name: "C#" },
+  { src: "/assets/languages/docker.png", alt: "Docker logo", name: "Docker" },
+  { src: "/assets/languages/mysql.png", alt: "MySQL logo", name: "MySQL" },
+  { src: "/assets/languages/php.png", alt: "PHP logo", name: "PHP" },
+  { src: "/assets/languages/postgresql.png", alt: "PostgreSQL logo", name: "PostgreSQL" },
+  { src: "/assets/languages/react js.png", alt: "React logo", name: "React" },
+  { src: "/assets/languages/supabase.jpg", alt: "Supabase logo", name: "Supabase" },
+  { src: "/assets/languages/vercel.png", alt: "Vercel logo", name: "Vercel" },
 ];
 
 export default function AnimatedGlobe() {
@@ -71,7 +80,7 @@ export default function AnimatedGlobe() {
       </AnimatePresence>
       
       {/* Pagination dots */}
-      <div className="absolute bottom-6 flex space-x-2 z-10">
+      <div className="absolute bottom-4 flex flex-wrap justify-center gap-1.5 max-w-[90%] z-10">
         {languageLogos.map((_, idx) => (
           <div 
             key={idx}
