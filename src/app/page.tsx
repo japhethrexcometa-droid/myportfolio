@@ -252,7 +252,7 @@ export default function Home() {
                           src={skill.logo}
                           alt={`${skill.name} logo`}
                           fill
-                          className={`${((skill as any).imageClassName && (skill as any).imageClassName.includes('object-cover')) ? '' : 'object-contain'} ${(skill as any).imageClassName || ""}`}
+                          className={`rounded-xl ${((skill as any).imageClassName && (skill as any).imageClassName.includes('object-cover')) ? '' : 'object-contain'} ${(skill as any).imageClassName || ""}`}
                           loading="lazy"
                         />
                       </div>

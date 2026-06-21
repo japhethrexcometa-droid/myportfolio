@@ -49,7 +49,7 @@ export default function AnimatedGlobe() {
               src={currentLogo.src}
               alt={currentLogo.alt}
               fill
-              className={`${((currentLogo as any).imageClassName && (currentLogo as any).imageClassName.includes('object-cover')) ? '' : 'object-contain'} p-4 ${currentLogo.imageClassName || ""}`}
+              className={`rounded-xl ${((currentLogo as any).imageClassName && (currentLogo as any).imageClassName.includes('object-cover')) ? '' : 'object-contain'} p-4 ${currentLogo.imageClassName || ""}`}
               priority
             />
           </div>
