@@ -4,28 +4,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-const languageLogos = [
-  { src: "/assets/languages/javascript.png", alt: "JavaScript logo", name: "JavaScript" },
-  { src: "/assets/languages/Typescript.png", alt: "TypeScript logo", name: "TypeScript" },
-  { src: "/assets/languages/github.png", alt: "Github logo", name: "GitHub", className: "bg-white rounded-full" },
-  { src: "/assets/languages/next js.png", alt: "Next.js logo", name: "Next.js", className: "bg-white rounded-full p-2" },
-  { src: "/assets/languages/node js.png", alt: "Node.js logo", name: "Node.js" },
-  { src: "/assets/languages/python.png", alt: "Python logo", name: "Python" },
-  { src: "/assets/languages/SQL.png", alt: "SQL logo", name: "SQL" },
-  { src: "/assets/languages/mongodb.png", alt: "MongoDB logo", name: "MongoDB" },
-  { src: "/assets/languages/git.png", alt: "Git logo", name: "Git" },
-  { src: "/assets/languages/tailwind.jpg", alt: "Tailwind CSS logo", name: "Tailwind CSS", className: "rounded-xl overflow-hidden" },
-  { src: "/assets/languages/aws.webp", alt: "AWS logo", name: "AWS", className: "bg-white rounded-xl p-2" },
-  { src: "/assets/languages/C++_Logo.svg.png", alt: "C++ logo", name: "C++" },
-  { src: "/assets/languages/Csharp.png", alt: "C# logo", name: "C#" },
-  { src: "/assets/languages/docker.png", alt: "Docker logo", name: "Docker" },
-  { src: "/assets/languages/mysql.png", alt: "MySQL logo", name: "MySQL" },
-  { src: "/assets/languages/php.png", alt: "PHP logo", name: "PHP" },
-  { src: "/assets/languages/postgresql.png", alt: "PostgreSQL logo", name: "PostgreSQL" },
-  { src: "/assets/languages/react js.png", alt: "React logo", name: "React" },
-  { src: "/assets/languages/supabase.jpg", alt: "Supabase logo", name: "Supabase", className: "rounded-xl overflow-hidden" },
-  { src: "/assets/languages/vercel.png", alt: "Vercel logo", name: "Vercel", className: "bg-white rounded-xl p-2" },
-];
+import { skills } from "@/lib/data";
+
+const languageLogos = skills.map((skill) => ({
+  src: skill.logo,
+  alt: `${skill.name} logo`,
+  name: skill.name,
+  className: skill.className,
+  imageClassName: skill.imageClassName,
+}));
 
 export default function AnimatedGlobe() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -62,7 +49,7 @@ export default function AnimatedGlobe() {
               src={currentLogo.src}
               alt={currentLogo.alt}
               fill
-              className="object-contain p-4"
+              className={`object-contain p-4 ${currentLogo.imageClassName || ""}`}
               priority
             />
           </div>

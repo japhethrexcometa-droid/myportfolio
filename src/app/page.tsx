@@ -29,28 +29,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import AnimatedGlobe from "@/components/AnimatedGlobe";
 
-const skills = [
-  { name: "JavaScript", logo: "/assets/languages/javascript.png" },
-  { name: "TypeScript", logo: "/assets/languages/Typescript.png" },
-  { name: "React", logo: "/assets/languages/react js.png" },
-  { name: "Next.js", logo: "/assets/languages/next js.png", className: "bg-white rounded-xl p-1" },
-  { name: "Node.js", logo: "/assets/languages/node js.png" },
-  { name: "Python", logo: "/assets/languages/python.png" },
-  { name: "SQL", logo: "/assets/languages/SQL.png" },
-  { name: "MongoDB", logo: "/assets/languages/mongodb.png" },
-  { name: "Git", logo: "/assets/languages/git.png" },
-  { name: "GitHub", logo: "/assets/languages/github.png", className: "bg-white rounded-xl p-1" },
-  { name: "Tailwind CSS", logo: "/assets/languages/tailwind.jpg", className: "bg-white rounded-xl p-1 overflow-hidden" },
-  { name: "AWS", logo: "/assets/languages/aws.webp", className: "bg-white rounded-xl overflow-hidden", imageClassName: "scale-[1.35]" },
-  { name: "C++", logo: "/assets/languages/C++_Logo.svg.png" },
-  { name: "C#", logo: "/assets/languages/Csharp.png" },
-  { name: "Docker", logo: "/assets/languages/docker.png" },
-  { name: "MySQL", logo: "/assets/languages/mysql.png" },
-  { name: "PHP", logo: "/assets/languages/php.png" },
-  { name: "PostgreSQL", logo: "/assets/languages/postgresql.png" },
-  { name: "Supabase", logo: "/assets/languages/supabase.jpg", className: "bg-white rounded-xl p-1 overflow-hidden" },
-  { name: "Vercel", logo: "/assets/languages/vercel.png", className: "bg-white rounded-xl p-1" },
-];
+import { skills } from "@/lib/data";
 
 const projects = [
   {
