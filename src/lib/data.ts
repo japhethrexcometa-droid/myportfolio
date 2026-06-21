@@ -29,5 +29,5 @@ export const skills: Skill[] = [
 ].map(skill => ({
   ...skill,
   // This guarantees EVERY SINGLE ICON gets the exact same pristine white rounded box
-  className: "bg-white rounded-xl p-2 overflow-hidden shadow-sm"
+  className: "bg-white rounded-xl p-2 overflow-hidden shadow-sm aspect-square min-w-[4rem] min-h-[4rem] max-w-[4rem] max-h-[4rem]"
 }));
