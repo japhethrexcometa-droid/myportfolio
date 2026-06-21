@@ -537,8 +537,8 @@ export default function Home() {
                             <Mail className="h-8 w-8 text-white" aria-hidden="true" />
                           </div>
                           <h4 className="text-xl font-bold text-black-900 dark:text-white mb-2">Email</h4>
-                          <p className="text-black-800 dark:text-black-100 text-sm mb-2 break-all">
-                            japhethrex.cometa@msubuug.edu.ph
+                          <p className="text-black-800 dark:text-black-100 text-xs md:text-sm lg:text-xs xl:text-sm mb-2 px-2">
+                            japhethrex.cometa<wbr/>@msubuug.edu.ph
                           </p>
                           <p className="text-teal-600 dark:text-teal-400 text-xs">Click to send email</p>
                         </div>
