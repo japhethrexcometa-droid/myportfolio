@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth">
-      <body className={`${inter.className} bg-slate-50 dark:bg-[#0B1120] text-slate-900 dark:text-slate-50`}>{children}</body>
+      <body className={`${inter.className} bg-[#0B1120] text-slate-50`}>{children}</body>
     </html>
   );
 }
