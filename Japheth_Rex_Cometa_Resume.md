@@ -1,4 +1,5 @@
 # Japheth Rex Cometa
+
 **Full Stack Developer | 4th Year IT Student**
 
 ![Profile Image](/profile-image.jpg)
@@ -6,8 +7,9 @@
 ---
 
 ## Contact Information
+
 - **Email:** japhethrex.cometa@msubuug.edu.ph
-- **LinkedIn:** linkedin.com/in/japhethrexcometa
+- **LinkedIn:** linkedin.com/in/Japheth Rex Cometa
 - **GitHub:** github.com/japhethrexcometa
 - **Telegram:** @japhethrexcometa
 - **Portfolio:** https://lovey-dovey-five.vercel.app/
@@ -16,20 +18,23 @@
 ---
 
 ## Professional Summary
+
 Passionate 4th-year Information Technology student with a strong foundation in full-stack development. Specialized in building comprehensive management systems, innovative capstone projects, and custom web applications that solve real-world problems. Committed to turning imagination into reality through clean, efficient, and scalable code.
 
 ---
 
 ## Education
+
 **Mindanao State University - Buug**  
-*Bachelor of Science in Information Technology*  
-*Expected Graduation: 2027*
+_Bachelor of Science in Information Technology_  
+_Expected Graduation: 2027_
 
 ---
 
 ## Technical Skills
 
 ### Frontend Development
+
 - **Languages:** JavaScript (ES6+), JSX, TypeScript, HTML5, CSS3
 - **Frameworks:** React v18, Next.js, Tailwind CSS
 - **Build Tools:** Vite, React Router
@@ -37,17 +42,20 @@ Passionate 4th-year Information Technology student with a strong foundation in f
 - **Icons:** Lucide React
 
 ### Backend Development
+
 - **Languages:** Node.js, Python, PHP
 - **Databases:** PostgreSQL, MongoDB, MySQL, SQL
 - **Backend-as-a-Service:** Supabase
 - **APIs:** RESTful APIs, GraphQL
 
 ### Cloud & DevOps
+
 - **Platforms:** AWS, Vercel, Supabase
 - **Tools:** Docker, Git, Postman
 - **PWA:** Service Workers, Progressive Web Apps
 
 ### Mobile Development
+
 - **Cross-platform:** React Native, Flutter
 - **Native:** Android Development
 
@@ -56,6 +64,7 @@ Passionate 4th-year Information Technology student with a strong foundation in f
 ## Projects
 
 ### Custom Web Application (June 13-14, 2026)
+
 - **Description:** Built a fully functional web application with modern React stack, featuring responsive design, smooth animations, and PWA capabilities
 - **Live Demo:** https://lovey-dovey-five.vercel.app/
 - **Technologies:** React v18, Vite, React Router, Supabase, Framer Motion, Lucide React
@@ -63,6 +72,7 @@ Passionate 4th-year Information Technology student with a strong foundation in f
 - **Timeline:** Completed in 2 days with full deployment
 
 ### EcoDry System - IoT Monitoring & Control Web App
+
 - **Description:** Comprehensive web-based IoT monitoring system with ESP32 hardware integration for real-time environmental data processing and automated shield control
 - **Live Demo:** https://eco-dry-one.vercel.app/
 - **Technologies:** Node.js, Express.js v5, EJS, SQLite3, ESP32 IoT, JWT, Passport.js, bcrypt, Nodemailer, Jest
@@ -70,6 +80,7 @@ Passionate 4th-year Information Technology student with a strong foundation in f
 - **Impact:** Advanced IoT system with robust security and automated environmental management
 
 ### Management Systems
+
 - **Description:** Built comprehensive management systems for businesses including inventory, employee, and project management solutions
 - **Technologies:** React, Node.js, MongoDB, Tailwind CSS
 - **Features:** Real-time data tracking, user authentication, reporting dashboards
@@ -77,6 +88,7 @@ Passionate 4th-year Information Technology student with a strong foundation in f
 ---
 
 ## Services Offered
+
 - Full-stack web development
 - Management system development
 - Capstone project implementation
@@ -89,6 +101,7 @@ Passionate 4th-year Information Technology student with a strong foundation in f
 ---
 
 ## Core Competencies
+
 - **Problem Solving:** Analytical approach to complex technical challenges
 - **Project Management:** Experience with agile methodologies and project lifecycles
 - **Communication:** Strong verbal and written communication skills
@@ -98,16 +111,18 @@ Passionate 4th-year Information Technology student with a strong foundation in f
 ---
 
 ## Languages
+
 - **English:** Professional proficiency
 - **Filipino:** Native proficiency
 
 ---
 
 ## Availability
+
 - **Status:** Open to freelance projects and full-time opportunities
 - **Preferred Work:** Remote, Hybrid, or On-site
 - **Response Time:** Within 24 hours
 
 ---
 
-*"I turn imagination into reality through clean, efficient, and scalable code."*
+_"I turn imagination into reality through clean, efficient, and scalable code."_
