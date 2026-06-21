@@ -20,7 +20,9 @@ import {
   CheckCircle2,
   ArrowUp,
   Send,
-  Facebook
+  Facebook,
+  ShieldCheck,
+  Activity
 } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -44,28 +46,25 @@ const skills = [
 
 const projects = [
   {
-    title: "Management Systems",
-    description: "Built comprehensive management systems for businesses including inventory, employee, and project management solutions.",
-    technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-    icon: Server,
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "MSU-ZS ROTC Unit System",
+    description: "Architected a robust Progressive Web App (PWA) management system engineered to streamline ROTC attendance, enrollment, and record-keeping via secure, real-time dynamic QR code scanning and role-based access control.",
+    technologies: ["React", "TypeScript", "Supabase", "Tailwind CSS"],
+    icon: ShieldCheck,
+    demoUrl: "https://msu-zs-rotc-unit.vercel.app",
   },
   {
-    title: "Capstone Projects",
-    description: "Developed innovative capstone systems addressing real-world problems with modern technologies and best practices.",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "AWS"],
-    icon: Globe,
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "EcoDry System - IoT Monitoring",
+    description: "Engineered an advanced web-based IoT monitoring platform integrating ESP32 hardware for real-time environmental data processing, automated shield control mechanisms, and scalable RBAC authentication.",
+    technologies: ["Node.js", "Express", "SQLite3", "IoT"],
+    icon: Activity,
+    demoUrl: "https://eco-dry-one.vercel.app",
   },
   {
-    title: "Custom Web Applications",
-    description: "Turn client imaginations into reality with bespoke web applications tailored to specific business needs.",
-    technologies: ["React", "Python", "SQL", "Docker"],
-    icon: Code2,
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Lovey Dovey Custom Web App",
+    description: "Designed and built a highly responsive, bespoke web application featuring a modern React stack, seamless Framer Motion animations, and enterprise-grade offline-ready PWA capabilities.",
+    technologies: ["React", "Vite", "Framer Motion", "PWA"],
+    icon: Smartphone,
+    demoUrl: "https://lovey-dovey-five.vercel.app",
   },
 ];
 
@@ -383,15 +382,11 @@ export default function Home() {
                       <div className="flex space-x-3">
                         <a
                           href={project.demoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="flex-1 text-center px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-lg transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-teal-500"
                         >
-                          View Demo
-                        </a>
-                        <a
-                          href={project.githubUrl}
-                          className="flex-1 text-center px-4 py-2 border-2 border-teal-600 text-teal-600 hover:bg-teal-50 dark:hover:bg-teal-900 rounded-lg transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-teal-500"
-                        >
-                          GitHub
+                          View Live Project
                         </a>
                       </div>
                     </CardContent>
