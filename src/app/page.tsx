@@ -314,12 +314,12 @@ export default function Home() {
               >
                 <Card className="border-2 border-gray-900 dark:border-gray-100 bg-gray-900 dark:bg-gray-800 hover:shadow-2xl hover:scale-105 transition-all duration-300">
                   <CardContent className="p-6">
-                    <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
+                    <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden bg-white">
                       <Image
                         src="/assets/mobile & web dev/mobile dev.jpg"
                         alt="Mobile Development"
                         fill
-                        className="object-cover"
+                        className="object-contain p-2"
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-black-900 dark:text-white mb-2">Mobile Development</h3>
