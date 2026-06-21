@@ -27,7 +27,7 @@ Passionate 4th-year Information Technology student with a strong foundation in f
 
 **Mindanao State University - Buug**  
 _Bachelor of Science in Information Technology_  
-_Expected Graduation: 2027_
+_Expected Graduation: 2028_
 
 ---
 
@@ -121,7 +121,7 @@ _Expected Graduation: 2027_
 
 - **Status:** Open to freelance projects and full-time opportunities
 - **Preferred Work:** Remote, Hybrid, or On-site
-- **Response Time:** Within 24 hours
+- **Response Time:** Within 12 hours (Same-day response)
 
 ---
 

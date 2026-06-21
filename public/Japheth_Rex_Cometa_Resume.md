@@ -1,46 +1,61 @@
 # Japheth Rex Cometa
+
 **Full Stack Developer | 4th Year IT Student**
+
+![Profile Image](/profile-image.jpg)
 
 ---
 
 ## Contact Information
+
 - **Email:** japhethrex.cometa@msubuug.edu.ph
-- **LinkedIn:** linkedin.com/in/japhethrexcometa
+- **LinkedIn:** linkedin.com/in/Japheth Rex Cometa
 - **GitHub:** github.com/japhethrexcometa
 - **Telegram:** @japhethrexcometa
+- **Portfolio:** https://lovey-dovey-five.vercel.app/
 - **Location:** Philippines
 
 ---
 
 ## Professional Summary
+
 Passionate 4th-year Information Technology student with a strong foundation in full-stack development. Specialized in building comprehensive management systems, innovative capstone projects, and custom web applications that solve real-world problems. Committed to turning imagination into reality through clean, efficient, and scalable code.
 
 ---
 
 ## Education
-**Mindanao State University - Bukidnon**  
-*Bachelor of Science in Information Technology*  
-*Expected Graduation: 2026*
+
+**Mindanao State University - Buug**  
+_Bachelor of Science in Information Technology_  
+_Expected Graduation: 2028_
 
 ---
 
 ## Technical Skills
 
 ### Frontend Development
-- **Languages:** JavaScript, TypeScript, HTML5, CSS3
-- **Frameworks:** React, Next.js, Tailwind CSS
-- **Tools:** Git, Framer Motion
+
+- **Languages:** JavaScript (ES6+), JSX, TypeScript, HTML5, CSS3
+- **Frameworks:** React v18, Next.js, Tailwind CSS
+- **Build Tools:** Vite, React Router
+- **Animation:** Framer Motion
+- **Icons:** Lucide React
 
 ### Backend Development
+
 - **Languages:** Node.js, Python, PHP
-- **Databases:** MongoDB, PostgreSQL, MySQL, SQL
+- **Databases:** PostgreSQL, MongoDB, MySQL, SQL
+- **Backend-as-a-Service:** Supabase
 - **APIs:** RESTful APIs, GraphQL
 
 ### Cloud & DevOps
+
 - **Platforms:** AWS, Vercel, Supabase
-- **Tools:** Docker, Git
+- **Tools:** Docker, Git, Postman
+- **PWA:** Service Workers, Progressive Web Apps
 
 ### Mobile Development
+
 - **Cross-platform:** React Native, Flutter
 - **Native:** Android Development
 
@@ -48,24 +63,32 @@ Passionate 4th-year Information Technology student with a strong foundation in f
 
 ## Projects
 
+### Custom Web Application (June 13-14, 2026)
+
+- **Description:** Built a fully functional web application with modern React stack, featuring responsive design, smooth animations, and PWA capabilities
+- **Live Demo:** https://lovey-dovey-five.vercel.app/
+- **Technologies:** React v18, Vite, React Router, Supabase, Framer Motion, Lucide React
+- **Features:** Component-based architecture, SPA navigation, backend integration, progressive web app
+- **Timeline:** Completed in 2 days with full deployment
+
+### EcoDry System - IoT Monitoring & Control Web App
+
+- **Description:** Comprehensive web-based IoT monitoring system with ESP32 hardware integration for real-time environmental data processing and automated shield control
+- **Live Demo:** https://eco-dry-one.vercel.app/
+- **Technologies:** Node.js, Express.js v5, EJS, SQLite3, ESP32 IoT, JWT, Passport.js, bcrypt, Nodemailer, Jest
+- **Features:** Real-time sensor monitoring (temperature, humidity, rain), automated shield control, secure authentication (OAuth), role-based access control, automated email alerts, comprehensive testing
+- **Impact:** Advanced IoT system with robust security and automated environmental management
+
 ### Management Systems
+
 - **Description:** Built comprehensive management systems for businesses including inventory, employee, and project management solutions
 - **Technologies:** React, Node.js, MongoDB, Tailwind CSS
 - **Features:** Real-time data tracking, user authentication, reporting dashboards
 
-### Capstone Projects
-- **Description:** Developed innovative capstone systems addressing real-world problems with modern technologies and best practices
-- **Technologies:** Next.js, TypeScript, PostgreSQL, AWS
-- **Impact:** Solved specific business challenges with scalable solutions
-
-### Custom Web Applications
-- **Description:** Turn client imaginations into reality with bespoke web applications tailored to specific business needs
-- **Technologies:** React, Python, SQL, Docker
-- **Approach:** Custom solutions for unique business requirements
-
 ---
 
 ## Services Offered
+
 - Full-stack web development
 - Management system development
 - Capstone project implementation
@@ -78,6 +101,7 @@ Passionate 4th-year Information Technology student with a strong foundation in f
 ---
 
 ## Core Competencies
+
 - **Problem Solving:** Analytical approach to complex technical challenges
 - **Project Management:** Experience with agile methodologies and project lifecycles
 - **Communication:** Strong verbal and written communication skills
@@ -87,16 +111,18 @@ Passionate 4th-year Information Technology student with a strong foundation in f
 ---
 
 ## Languages
+
 - **English:** Professional proficiency
 - **Filipino:** Native proficiency
 
 ---
 
 ## Availability
+
 - **Status:** Open to freelance projects and full-time opportunities
 - **Preferred Work:** Remote, Hybrid, or On-site
-- **Response Time:** Within 24 hours
+- **Response Time:** Within 12 hours (Same-day response)
 
 ---
 
-*"I turn imagination into reality through clean, efficient, and scalable code."*
+_"I turn imagination into reality through clean, efficient, and scalable code."_
