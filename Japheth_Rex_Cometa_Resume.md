@@ -27,7 +27,6 @@ Passionate 4th-year Information Technology student with a strong foundation in f
 
 **Mindanao State University - Buug**  
 _Bachelor of Science in Information Technology_  
-_Expected Graduation: 2028_
 
 ---
 
