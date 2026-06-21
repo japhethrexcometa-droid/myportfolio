@@ -33,23 +33,23 @@ const skills = [
   { name: "JavaScript", logo: "/assets/languages/javascript.png" },
   { name: "TypeScript", logo: "/assets/languages/Typescript.png" },
   { name: "React", logo: "/assets/languages/react js.png" },
-  { name: "Next.js", logo: "/assets/languages/next js.png", className: "bg-white rounded-full p-1" },
+  { name: "Next.js", logo: "/assets/languages/next js.png", className: "bg-white rounded-xl p-1" },
   { name: "Node.js", logo: "/assets/languages/node js.png" },
   { name: "Python", logo: "/assets/languages/python.png" },
   { name: "SQL", logo: "/assets/languages/SQL.png" },
   { name: "MongoDB", logo: "/assets/languages/mongodb.png" },
   { name: "Git", logo: "/assets/languages/git.png" },
-  { name: "GitHub", logo: "/assets/languages/github.png", className: "bg-white rounded-full" },
-  { name: "Tailwind CSS", logo: "/assets/languages/tailwind.jpg", className: "rounded-lg overflow-hidden" },
-  { name: "AWS", logo: "/assets/languages/aws.webp", className: "bg-white rounded-lg p-1" },
+  { name: "GitHub", logo: "/assets/languages/github.png", className: "bg-white rounded-xl p-1" },
+  { name: "Tailwind CSS", logo: "/assets/languages/tailwind.jpg", className: "bg-white rounded-xl p-1 overflow-hidden" },
+  { name: "AWS", logo: "/assets/languages/aws.webp", className: "bg-white rounded-xl p-1" },
   { name: "C++", logo: "/assets/languages/C++_Logo.svg.png" },
   { name: "C#", logo: "/assets/languages/Csharp.png" },
   { name: "Docker", logo: "/assets/languages/docker.png" },
   { name: "MySQL", logo: "/assets/languages/mysql.png" },
   { name: "PHP", logo: "/assets/languages/php.png" },
   { name: "PostgreSQL", logo: "/assets/languages/postgresql.png" },
-  { name: "Supabase", logo: "/assets/languages/supabase.jpg", className: "rounded-lg overflow-hidden" },
-  { name: "Vercel", logo: "/assets/languages/vercel.png", className: "bg-white rounded-lg p-1" },
+  { name: "Supabase", logo: "/assets/languages/supabase.jpg", className: "bg-white rounded-xl p-1 overflow-hidden" },
+  { name: "Vercel", logo: "/assets/languages/vercel.png", className: "bg-white rounded-xl p-1" },
 ];
 
 const projects = [
@@ -156,7 +156,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="bg-teal-600 hover:bg-teal-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-500 w-full sm:w-auto"
                   onClick={(e) => {
                     e.preventDefault();
                     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -168,7 +168,7 @@ export default function Home() {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="bg-transparent border-teal-600 text-teal-400 hover:bg-teal-900/30 focus:outline-none focus:ring-2 focus:ring-teal-500 w-full sm:w-auto"
                   onClick={(e) => {
                     e.preventDefault();
                     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
@@ -177,8 +177,8 @@ export default function Home() {
                   <ExternalLink className="mr-2 h-5 w-5" aria-hidden="true" />
                   View Projects
                 </Button>
-                <a href="/Japheth_Rex_Cometa_Resume.html" target="_blank" rel="noopener noreferrer" className="inline-block">
-                  <Button size="lg" variant="outline" className="focus:outline-none focus:ring-2 focus:ring-teal-500">
+                <a href="/Japheth_Rex_Cometa_Resume.html" target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="bg-transparent border-teal-600 text-teal-400 hover:bg-teal-900/30 focus:outline-none focus:ring-2 focus:ring-teal-500 w-full">
                     View Resume
                   </Button>
                 </a>
@@ -319,7 +319,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-2">Web Development</h3>
-                    <p className="text-gray-300">
+                    <p className="text-gray-300 text-justify">
                       Building responsive, scalable web applications using modern frameworks like React, Next.js, and Node.js. From simple landing pages to complex management systems.
                     </p>
                   </CardContent>
@@ -343,7 +343,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-2">Mobile Development</h3>
-                    <p className="text-gray-300">
+                    <p className="text-gray-300 text-justify">
                       Creating cross-platform mobile applications that work seamlessly on iOS and Android. Using modern tools and frameworks to deliver native-like performance.
                     </p>
                   </CardContent>
@@ -386,7 +386,7 @@ export default function Home() {
                       <CardTitle className="text-2xl">{project.title}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-gray-300 mb-4">
+                      <p className="text-gray-300 mb-4 text-justify">
                         {project.description}
                       </p>
                       <div className="flex flex-wrap gap-2 mb-4">
