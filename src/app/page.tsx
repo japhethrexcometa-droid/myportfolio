@@ -246,7 +246,7 @@ export default function Home() {
                 >
                   <Card className="hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-gray-700 bg-gray-800">
                     <CardContent className="p-6 flex flex-col items-center justify-center text-center">
-                      <div className={`w-16 h-16 mb-3 relative flex items-center justify-center ${skill.className || ""}`}>
+                      <div className={`shrink-0 w-16 h-16 mb-3 relative flex items-center justify-center ${skill.className || ""}`}>
                         <Image
                           src={skill.logo}
                           alt={`${skill.name} logo`}
