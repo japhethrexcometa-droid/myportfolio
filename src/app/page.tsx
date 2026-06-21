@@ -154,17 +154,28 @@ export default function Home() {
                 capstone projects, and custom web applications that help businesses thrive.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button asChild size="lg" className="bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500">
-                  <a href="#contact">
-                    <Mail className="mr-2 h-5 w-5" aria-hidden="true" />
-                    Contact Me
-                  </a>
+                <Button 
+                  size="lg" 
+                  className="bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  <Mail className="mr-2 h-5 w-5" aria-hidden="true" />
+                  Contact Me
                 </Button>
-                <Button asChild size="lg" variant="outline" className="focus:outline-none focus:ring-2 focus:ring-teal-500">
-                  <a href="#projects">
-                    <ExternalLink className="mr-2 h-5 w-5" aria-hidden="true" />
-                    View Projects
-                  </a>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  <ExternalLink className="mr-2 h-5 w-5" aria-hidden="true" />
+                  View Projects
                 </Button>
                 <a href="/Japheth_Rex_Cometa_Resume.html" target="_blank" rel="noopener noreferrer" className="inline-block">
                   <Button size="lg" variant="outline" className="focus:outline-none focus:ring-2 focus:ring-teal-500">
@@ -474,10 +485,10 @@ export default function Home() {
                     href="https://t.me/japhethrexcometa"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block"
+                    className="block h-full"
                   >
-                    <Card className="border-2 border-gray-900 dark:border-gray-100 bg-gray-900 dark:bg-gray-800 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                      <CardContent className="p-6">
+                    <Card className="border-2 border-gray-900 dark:border-gray-100 bg-gray-900 dark:bg-gray-800 hover:shadow-2xl hover:scale-105 transition-all duration-300 h-full flex flex-col justify-center">
+                      <CardContent className="p-6 flex flex-col items-center justify-center">
                         <div className="text-center">
                           <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-teal-600 to-teal-700 rounded-full flex items-center justify-center">
                             <Send className="h-8 w-8 text-white" />
@@ -502,10 +513,10 @@ export default function Home() {
                     href="https://facebook.com/japhethrexcometa"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block"
+                    className="block h-full"
                   >
-                    <Card className="border-2 border-gray-900 dark:border-gray-100 bg-gray-900 dark:bg-gray-800 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                      <CardContent className="p-6">
+                    <Card className="border-2 border-gray-900 dark:border-gray-100 bg-gray-900 dark:bg-gray-800 hover:shadow-2xl hover:scale-105 transition-all duration-300 h-full flex flex-col justify-center">
+                      <CardContent className="p-6 flex flex-col items-center justify-center">
                         <div className="text-center">
                           <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center">
                             <Facebook className="h-8 w-8 text-white" />
@@ -528,10 +539,10 @@ export default function Home() {
                 >
                   <a 
                     href="mailto:japhethrex.cometa@msubuug.edu.ph"
-                    className="block"
+                    className="block h-full"
                   >
-                    <Card className="border-2 border-gray-900 dark:border-gray-100 bg-gray-900 dark:bg-gray-800 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                      <CardContent className="p-6">
+                    <Card className="border-2 border-gray-900 dark:border-gray-100 bg-gray-900 dark:bg-gray-800 hover:shadow-2xl hover:scale-105 transition-all duration-300 h-full flex flex-col justify-center">
+                      <CardContent className="p-6 flex flex-col items-center justify-center">
                         <div className="text-center">
                           <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center">
                             <Mail className="h-8 w-8 text-white" aria-hidden="true" />
