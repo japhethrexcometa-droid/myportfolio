@@ -17,7 +17,7 @@ export const skills: Skill[] = [
   { name: "Git", logo: "/assets/languages/git.png", imageClassName: "scale-110" },
   { name: "GitHub", logo: "/assets/languages/github.png" },
   { name: "Tailwind CSS", logo: "/assets/languages/tailwind.jpg" },
-  { name: "AWS", logo: "/assets/languages/aws.webp", imageClassName: "scale-[1.7]" },
+  { name: "AWS", logo: "/assets/languages/aws.webp", imageClassName: "object-cover object-center" },
   { name: "C++", logo: "/assets/languages/C++_Logo.svg.png", imageClassName: "scale-110" },
   { name: "C#", logo: "/assets/languages/Csharp.png", imageClassName: "scale-110" },
   { name: "Docker", logo: "/assets/languages/docker.png", imageClassName: "scale-110" },

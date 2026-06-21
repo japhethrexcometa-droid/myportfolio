@@ -252,7 +252,7 @@ export default function Home() {
                           src={skill.logo}
                           alt={`${skill.name} logo`}
                           fill
-                          className={`object-contain ${(skill as any).imageClassName || ""}`}
+                          className={`${((skill as any).imageClassName && (skill as any).imageClassName.includes('object-cover')) ? '' : 'object-contain'} ${(skill as any).imageClassName || ""}`}
                           loading="lazy"
                         />
                       </div>
