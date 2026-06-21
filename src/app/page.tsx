@@ -41,7 +41,7 @@ const skills = [
   { name: "Git", logo: "/assets/languages/git.png" },
   { name: "GitHub", logo: "/assets/languages/github.png", className: "bg-white rounded-xl p-1" },
   { name: "Tailwind CSS", logo: "/assets/languages/tailwind.jpg", className: "bg-white rounded-xl p-1 overflow-hidden" },
-  { name: "AWS", logo: "/assets/languages/aws.webp", className: "bg-white rounded-xl p-1" },
+  { name: "AWS", logo: "/assets/languages/aws.webp", className: "bg-white rounded-xl overflow-hidden", imageClassName: "scale-[1.35]" },
   { name: "C++", logo: "/assets/languages/C++_Logo.svg.png" },
   { name: "C#", logo: "/assets/languages/Csharp.png" },
   { name: "Docker", logo: "/assets/languages/docker.png" },
@@ -272,7 +272,7 @@ export default function Home() {
                           src={skill.logo}
                           alt={`${skill.name} logo`}
                           fill
-                          className="object-contain"
+                          className={`object-contain ${(skill as any).imageClassName || ""}`}
                           loading="lazy"
                         />
                       </div>
