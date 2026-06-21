@@ -121,7 +121,7 @@ export default function Home() {
             >
               JRC
             </motion.div>
-            <div className="flex space-x-8">
+            <div className="flex items-center space-x-2 sm:space-x-8 text-xs sm:text-base overflow-x-auto whitespace-nowrap">
               <a href="#about" className="text-black-700 dark:text-black-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 rounded px-2 py-1">About</a>
               <a href="#skills" className="text-black-700 dark:text-black-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 rounded px-2 py-1">Skills</a>
               <a href="#projects" className="text-black-700 dark:text-black-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 rounded px-2 py-1">Projects</a>
