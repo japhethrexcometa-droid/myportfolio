@@ -1,188 +1,86 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const languageLogos = [
-  { src: "/assets/languages/javascript.png", alt: "JavaScript logo" },
-  { src: "/assets/languages/Typescript.png", alt: "TypeScript logo" },
-  { src: "/assets/languages/react.png", alt: "React logo" },
-  { src: "/assets/languages/next js.png", alt: "Next.js logo" },
-  { src: "/assets/languages/node js.png", alt: "Node.js logo" },
-  { src: "/assets/languages/python.png", alt: "Python logo" },
-  { src: "/assets/languages/SQL.png", alt: "SQL logo" },
-  { src: "/assets/languages/mongodb.png", alt: "MongoDB logo" },
-  { src: "/assets/languages/git.png", alt: "Git logo" },
-  { src: "/assets/languages/tailwind.jpg", alt: "Tailwind CSS logo" },
-  { src: "/assets/languages/aws.webp", alt: "AWS logo" },
+  { src: "/assets/languages/javascript.png", alt: "JavaScript logo", name: "JavaScript" },
+  { src: "/assets/languages/Typescript.png", alt: "TypeScript logo", name: "TypeScript" },
+  { src: "/assets/languages/react.png", alt: "React logo", name: "React" },
+  { src: "/assets/languages/next js.png", alt: "Next.js logo", name: "Next.js" },
+  { src: "/assets/languages/node js.png", alt: "Node.js logo", name: "Node.js" },
+  { src: "/assets/languages/python.png", alt: "Python logo", name: "Python" },
+  { src: "/assets/languages/SQL.png", alt: "SQL logo", name: "SQL" },
+  { src: "/assets/languages/mongodb.png", alt: "MongoDB logo", name: "MongoDB" },
+  { src: "/assets/languages/git.png", alt: "Git logo", name: "Git" },
+  { src: "/assets/languages/tailwind.jpg", alt: "Tailwind CSS logo", name: "Tailwind CSS" },
+  { src: "/assets/languages/aws.webp", alt: "AWS logo", name: "AWS" },
 ];
 
 export default function AnimatedGlobe() {
-  const [isHovered, setIsHovered] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const [imageErrors, setImageErrors] = useState<Set<string>>(new Set());
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % languageLogos.length);
+    }, 2000);
+    return () => clearInterval(timer);
   }, []);
 
-  const handleImageError = (src: string) => {
-    setImageErrors(prev => new Set(prev).add(src));
-  };
-
-  // Simplified for mobile - use fewer logos
-  const displayLogos = isMobile ? languageLogos.slice(0, 6) : languageLogos;
-  
-  // Filter out images that failed to load
-  const validLogos = displayLogos.filter(logo => !imageErrors.has(logo.src));
-  
-  // Split logos into 2 rings for counter-rotation effect
-  const outerRing = validLogos.slice(0, Math.ceil(validLogos.length / 2));
-  const innerRing = validLogos.slice(Math.ceil(validLogos.length / 2));
+  const currentLogo = languageLogos[currentIndex];
 
   return (
-    <div 
-      className="relative w-full h-full flex items-center justify-center"
-      onMouseEnter={() => !isMobile && setIsHovered(true)}
-      onMouseLeave={() => !isMobile && setIsHovered(false)}
-    >
-      {/* Central Globe */}
-      <motion.div
-        className="relative w-32 h-32 md:w-48 md:h-48"
-        animate={{
-          rotate: 360,
-        }}
-        transition={{
-          duration: isMobile ? 30 : 20,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full blur-2xl opacity-30 animate-pulse"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-600 to-teal-800 rounded-full shadow-2xl">
-          <div className="absolute inset-2 bg-gradient-to-br from-teal-400 to-teal-600 rounded-full opacity-50"></div>
-          <div className="absolute inset-4 bg-gradient-to-br from-teal-300 to-teal-500 rounded-full opacity-30"></div>
-        </div>
-      </motion.div>
+    <div className="relative w-full h-full flex flex-col items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-white/50 to-transparent dark:from-gray-800/50 dark:to-transparent backdrop-blur-sm border border-gray-200 dark:border-gray-700 shadow-xl p-8">
+      
+      {/* Decorative background glow */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-30">
+        <div className="w-64 h-64 bg-teal-400 rounded-full blur-[80px]"></div>
+      </div>
 
-      {/* Outer Ring - Clockwise */}
-      <motion.div
-        className="absolute w-56 h-56 md:w-80 md:h-80"
-        animate={{
-          rotate: 360,
-        }}
-        transition={{
-          duration: isMobile ? 35 : 25,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-      >
-        {outerRing.map((logo, index) => {
-          const angle = (index / outerRing.length) * 360;
-          const radius = isMobile ? 100 : 140; // Distance from center
-          const x = Math.cos((angle * Math.PI) / 180) * radius;
-          const y = Math.sin((angle * Math.PI) / 180) * radius;
-          const size = isMobile ? 10 : 12;
-
-          return (
-            <motion.div
-              key={logo.src}
-              className="absolute"
-              style={{
-                width: `${size}rem`,
-                height: `${size}rem`,
-                left: `calc(50% + ${x}px - ${size * 8}px)`,
-                top: `calc(50% + ${y}px - ${size * 8}px)`,
-              }}
-              animate={{
-                scale: isHovered ? 1.2 : 1,
-              }}
-              transition={{ duration: 0.3 }}
-            >
-              <div className="relative w-full h-full">
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  fill
-                  className="object-contain"
-                  loading="lazy"
-                  onError={() => handleImageError(logo.src)}
-                />
-                <motion.div
-                  className="absolute inset-0 bg-teal-500 rounded-full opacity-0 blur-md"
-                  animate={{
-                    opacity: isHovered ? 0.5 : 0,
-                  }}
-                  transition={{ duration: 0.3 }}
-                />
-              </div>
-            </motion.div>
-          );
-        })}
-      </motion.div>
-
-      {/* Inner Ring - Counter-Clockwise */}
-      <motion.div
-        className="absolute w-40 h-40 md:w-64 md:h-64"
-        animate={{
-          rotate: -360,
-        }}
-        transition={{
-          duration: isMobile ? 25 : 20,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-      >
-        {innerRing.map((logo, index) => {
-          const angle = (index / innerRing.length) * 360;
-          const radius = isMobile ? 70 : 100; // Distance from center
-          const x = Math.cos((angle * Math.PI) / 180) * radius;
-          const y = Math.sin((angle * Math.PI) / 180) * radius;
-          const size = isMobile ? 8 : 10;
-
-          return (
-            <motion.div
-              key={logo.src}
-              className="absolute"
-              style={{
-                width: `${size}rem`,
-                height: `${size}rem`,
-                left: `calc(50% + ${x}px - ${size * 8}px)`,
-                top: `calc(50% + ${y}px - ${size * 8}px)`,
-              }}
-              animate={{
-                scale: isHovered ? 1.2 : 1,
-              }}
-              transition={{ duration: 0.3 }}
-            >
-              <div className="relative w-full h-full">
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  fill
-                  className="object-contain"
-                  loading="lazy"
-                  onError={() => handleImageError(logo.src)}
-                />
-                <motion.div
-                  className="absolute inset-0 bg-purple-500 rounded-full opacity-0 blur-md"
-                  animate={{
-                    opacity: isHovered ? 0.5 : 0,
-                  }}
-                  transition={{ duration: 0.3 }}
-                />
-              </div>
-            </motion.div>
-          );
-        })}
-      </motion.div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentIndex}
+          initial={{ opacity: 0, x: 80, scale: 0.9 }}
+          animate={{ opacity: 1, x: 0, scale: 1 }}
+          exit={{ opacity: 0, x: -80, scale: 0.9 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="relative z-10 flex flex-col items-center"
+        >
+          {/* Logo container */}
+          <div className="relative w-40 h-40 md:w-56 md:h-56 mb-8 drop-shadow-2xl">
+            <Image
+              src={currentLogo.src}
+              alt={currentLogo.alt}
+              fill
+              className="object-contain p-4"
+              priority
+            />
+          </div>
+          
+          {/* Technology name */}
+          <motion.h3 
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-teal-600 to-teal-800 dark:from-teal-400 dark:to-teal-200 bg-clip-text text-transparent"
+          >
+            {currentLogo.name}
+          </motion.h3>
+        </motion.div>
+      </AnimatePresence>
+      
+      {/* Pagination dots */}
+      <div className="absolute bottom-6 flex space-x-2 z-10">
+        {languageLogos.map((_, idx) => (
+          <div 
+            key={idx}
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              idx === currentIndex ? "w-6 bg-teal-600 dark:bg-teal-400" : "w-2 bg-gray-300 dark:bg-gray-600"
+            }`}
+          />
+        ))}
+      </div>
     </div>
   );
 }
