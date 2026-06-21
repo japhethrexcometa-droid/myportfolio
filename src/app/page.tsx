@@ -154,16 +154,17 @@ export default function Home() {
                 capstone projects, and custom web applications that help businesses thrive.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500">
-                  <Mail className="mr-2 h-5 w-5" aria-hidden="true" />
-                  <a href="#contact">Contact Me</a>
+                <Button asChild size="lg" className="bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                  <a href="#contact">
+                    <Mail className="mr-2 h-5 w-5" aria-hidden="true" />
+                    Contact Me
+                  </a>
                 </Button>
-                <Button size="lg" variant="outline" className="focus:outline-none focus:ring-2 focus:ring-teal-500">
-                  <ExternalLink className="mr-2 h-5 w-5" aria-hidden="true" />
-                  <a href="#projects">View Projects</a>
-                </Button>
-                <Button size="lg" variant="outline" className="bg-gradient-to-r from-purple-600 to-purple-700 text-white border-purple-600 hover:from-purple-700 hover:to-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-500">
-                  Hire Me
+                <Button asChild size="lg" variant="outline" className="focus:outline-none focus:ring-2 focus:ring-teal-500">
+                  <a href="#projects">
+                    <ExternalLink className="mr-2 h-5 w-5" aria-hidden="true" />
+                    View Projects
+                  </a>
                 </Button>
                 <a href="/Japheth_Rex_Cometa_Resume.html" target="_blank" rel="noopener noreferrer" className="inline-block">
                   <Button size="lg" variant="outline" className="focus:outline-none focus:ring-2 focus:ring-teal-500">
@@ -536,7 +537,7 @@ export default function Home() {
                             <Mail className="h-8 w-8 text-white" aria-hidden="true" />
                           </div>
                           <h4 className="text-xl font-bold text-black-900 dark:text-white mb-2">Email</h4>
-                          <p className="text-black-800 dark:text-black-100 text-sm mb-2">
+                          <p className="text-black-800 dark:text-black-100 text-sm mb-2 break-all">
                             japhethrex.cometa@msubuug.edu.ph
                           </p>
                           <p className="text-teal-600 dark:text-teal-400 text-xs">Click to send email</p>
