@@ -32,16 +32,24 @@ import AnimatedGlobe from "@/components/AnimatedGlobe";
 const skills = [
   { name: "JavaScript", logo: "/assets/languages/javascript.png" },
   { name: "TypeScript", logo: "/assets/languages/Typescript.png" },
-  { name: "React", logo: "/assets/languages/react.png" },
+  { name: "React", logo: "/assets/languages/react js.png" },
   { name: "Next.js", logo: "/assets/languages/next js.png" },
   { name: "Node.js", logo: "/assets/languages/node js.png" },
   { name: "Python", logo: "/assets/languages/python.png" },
   { name: "SQL", logo: "/assets/languages/SQL.png" },
   { name: "MongoDB", logo: "/assets/languages/mongodb.png" },
   { name: "Git", logo: "/assets/languages/git.png" },
+  { name: "GitHub", logo: "/assets/languages/github.png" },
   { name: "Tailwind CSS", logo: "/assets/languages/tailwind.jpg" },
   { name: "AWS", logo: "/assets/languages/aws.webp" },
-  { name: "Mobile Dev", logo: "/assets/mobile & web dev/mobile dev.jpg" },
+  { name: "C++", logo: "/assets/languages/C++_Logo.svg.png" },
+  { name: "C#", logo: "/assets/languages/Csharp.png" },
+  { name: "Docker", logo: "/assets/languages/docker.png" },
+  { name: "MySQL", logo: "/assets/languages/mysql.png" },
+  { name: "PHP", logo: "/assets/languages/php.png" },
+  { name: "PostgreSQL", logo: "/assets/languages/postgresql.png" },
+  { name: "Supabase", logo: "/assets/languages/supabase.jpg" },
+  { name: "Vercel", logo: "/assets/languages/vercel.png" },
 ];
 
 const projects = [
@@ -236,7 +244,7 @@ export default function Home() {
             <p className="text-center text-black-800 dark:text-black-200 mb-12 text-lg">
               Technologies I use to bring ideas to life
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
               {skills.map((skill, index) => (
                 <motion.div
                   key={skill.name}
